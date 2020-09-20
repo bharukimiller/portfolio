@@ -20,8 +20,8 @@ const ScrollToTop = () => {
     <ScrollUpButton
       ContainerClassName="scroll-top-button-container"
       TransitionClassName="scroll-top-button-transition"
-      ShowAtPosition={500}
-      AnimationDuration={200}
+      ShowAtPosition={700}
+      AnimationDuration={3000}
     >
       <StyledContainer title="Scroll to top">
         <Icon icon="arrow-up" />

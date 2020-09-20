@@ -5,10 +5,27 @@ import ButtonLink from './links/button-link';
 import ScrollIndicator from './scroll-indicator';
 import { mq } from './_shared/media';
 import { StyledSection } from './_shared/styled-section';
+import YouTube from 'react-youtube';
+
+import "../styles/styles.css"
+
+const opts = {
+  height: '340',
+  width: '680',
+  top: '50%',
+  left: '50%',
+  playerVars: {
+    // https://developers.google.com/youtube/player_parameters
+    autoplay: 1,
+  },
+};
 
 const StyledHeroSection = styled(StyledSection)`
   min-height: calc(100vh - 2 * var(--header-height));
   position: relative;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 
   ${mq.gt.sm} {
     min-height: calc(100vh - var(--header-height));
@@ -51,14 +68,10 @@ const Hero = ({ data }) => {
   const { introduction, author, tagline, description, ctaLink, ctaLabel } = data;
 
   return (
-    <StyledHeroSection>
-      <StyledIntroduction>{introduction}</StyledIntroduction>
-      <StyledAuthor>{author}</StyledAuthor>
-      <StyledTagline>{tagline}</StyledTagline>
-      <StyledDescription dangerouslySetInnerHTML={{ __html: description }} />
-      <ButtonLink label={ctaLabel} link={ctaLink} />
-      <ScrollIndicator />
-    </StyledHeroSection>
+      <div className='background'>
+        <YouTube videoId="-hTVNidxg2s"  />
+      </div>
+     
   );
 };
 
