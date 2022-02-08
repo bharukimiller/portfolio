@@ -1,8 +1,8 @@
 module.exports = {
   pathPrefix: '/gatsby-starter-level-2',
   siteMetadata: {
-    title: 'Level 2',
-    titleTemplate: '%s · Level 2',
+    title: '',
+    titleTemplate: '%s',
     image: '/images/logo.png',
     author: 'Brett Miller',
     description: 'A portfolio website for Brett Haruki Miller',
