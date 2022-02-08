@@ -1,10 +1,8 @@
 ---
 featured: true
-date: '2019-12-15'
-title: 'Pomodoro'
-cover_image: './images/ocean.jpg'
-demo_link: 'https://knochenmark.github.io/pomodoro/'
-techs: ['Javascript', 'Html5', 'Css3', 'React']
+title: 'Portfolio!'
+cover_image: './images/PortfolioWebsite.png'
+repo_link: 'https://github.com/bharukimiller/gaming-website'
 ---
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+This website! Created using Gatsby, React, Sass, with some learning of GraphQL and Webpacker to make it all work! A fun project that utilizes the strengths of Gatsby in a static website to create what I hope you find to be an aethestically pleasing website to navigate

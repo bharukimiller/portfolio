@@ -39,7 +39,6 @@ export const pageQuery = graphql`
     ) {
       nodes {
         frontmatter {
-          date(formatString: "D MMMM, YYYY")
           title
           repo_link
           demo_link

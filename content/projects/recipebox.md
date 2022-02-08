@@ -1,11 +1,9 @@
 ---
 featured: true
-date: '2019-12-26'
-title: 'Recipebox'
-cover_image: './images/notebook.jpg'
-repo_link: 'https://github.com/Knochenmark/recipebox'
-demo_link: 'https://knochenmark.github.io/recipebox/'
-techs: ['Typescript', 'React', 'Redux', 'Typestyle']
+title: 'GiveCampus'
+cover_image: './images/GiveCampusLogo.png'
+repo_link: ''
+demo_link: 'https://go.givecampus.com/'
 ---
 
-Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+I am currently working here as a Software Engineer. I work on various portions of the codebase, and am currently on a product team to helps administrators have an easier time creating advocates for the online giving campaigns!

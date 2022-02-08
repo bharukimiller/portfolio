@@ -9,11 +9,11 @@ export const indexMenuLinks = [
     link: '/#projects',
     icon: 'terminal',
   },
-  {
-    name: 'Blog',
-    link: '/#blog',
-    icon: 'feather-alt',
-  },
+  // {
+  //   name: 'Blog',
+  //   link: '/#blog',
+  //   icon: 'feather-alt',
+  // },
   {
     name: 'Contact',
     link: '/#contact',

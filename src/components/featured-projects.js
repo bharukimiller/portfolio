@@ -100,7 +100,6 @@ const FeaturedProjects = ({ featured }) => {
             <StyledH2>{title}</StyledH2>
           </StyledContentLink>
           <StyledDescription dangerouslySetInnerHTML={{ __html: project.html }} />
-          <TechList techs={project.frontmatter.techs} />
           <StyledLinkContainer>
             {repoLink && (
               <a href={repoLink} target="_blank" rel="noopener" title="Repository Link" aria-label={repoLinkLabel}>
@@ -120,11 +119,11 @@ const FeaturedProjects = ({ featured }) => {
 
   return (
     <StyledSection id="projects">
-      <StyledH1>Featured Projects</StyledH1>
+      <StyledH1>Projects and Experience</StyledH1>
       {featuredProjects}
-      <StyledArchiveContainer>
+      {/* <StyledArchiveContainer>
         <TextLink label="View More Projects" link="/projects" />
-      </StyledArchiveContainer>
+      </StyledArchiveContainer> */}
     </StyledSection>
   );
 };

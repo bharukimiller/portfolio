@@ -30,7 +30,7 @@ const StyledFeatureCard = styled.article`
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-height: 200px;
+  min-height: px;
   padding: 1rem;
 
   & svg {
@@ -54,14 +54,12 @@ const StyledFeatureDescription = styled.p`
   font-size: 0.8rem;
 `;
 
-const CardGrid = ({ cards, description, title, id = null }) => {
-  const featureCards = cards.map(({ icon, prefix, label, description }, index) => {
+const CardGrid = ({ cards, title, id = null }) => {
+  const featureCards = cards.map(({ icon, prefix, label}, index) => {
     return (
       <StyledFeatureCard key={index}>
         <Icon icon={icon} prefix={prefix} />
         <StyledCardLabel>{label}</StyledCardLabel>
-        <StyledDivider></StyledDivider>
-        <StyledFeatureDescription>{description}</StyledFeatureDescription>
       </StyledFeatureCard>
     );
   });
@@ -69,7 +67,6 @@ const CardGrid = ({ cards, description, title, id = null }) => {
   return (
     <StyledSection id={id}>
       {title && <StyledH1>{title}</StyledH1>}
-      <StyledTextSection dangerouslySetInnerHTML={{ __html: description }} />
       <StyledFeatureGridContainer>{featureCards}</StyledFeatureGridContainer>
     </StyledSection>
   );
@@ -77,7 +74,6 @@ const CardGrid = ({ cards, description, title, id = null }) => {
 
 CardGrid.propTypes = {
   cards: PropTypes.array.isRequired,
-  description: PropTypes.string.isRequired,
   id: PropTypes.string,
   title: PropTypes.string,
 };

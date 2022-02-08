@@ -26,9 +26,8 @@ const Index = ({ data }) => {
       <SEO title="Home" />
       <Hero data={heroData} />
       <About data={data.about} />
-      <CardGrid cards={data.cards.frontmatter.cards} description={data.cards.html} title="Our Features" id="features" />
+      <CardGrid cards={data.cards.frontmatter.cards} description={data.cards.html} title="Languages" id="features" />
       <FeaturedProjects featured={data.featuredProjects.nodes} />
-      <RecentPosts data={data.blog.edges} />
       <Contact data={data.contact} />
     </Layout>
   );
