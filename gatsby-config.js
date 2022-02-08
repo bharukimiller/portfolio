@@ -5,8 +5,8 @@ module.exports = {
     titleTemplate: '%s · Level 2',
     image: '/images/logo.png',
     author: 'Brett Miller',
-    description: 'Gatsby starter to quickly setup your portfolio and boost it to the next level.',
-    url: 'https://knochenmark.github.io',
+    description: 'A portfolio website for Brett Haruki Miller',
+    url: 'bharukimiller.com',
     paginationPageSize: 4, // Amount of posts displayed per listing page.
   },
   plugins: [
