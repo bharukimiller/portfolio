@@ -5,7 +5,6 @@ import ButtonLink from './links/button-link';
 import ScrollIndicator from './scroll-indicator';
 import { mq } from './_shared/media';
 import { StyledSection } from './_shared/styled-section';
-import YouTube from 'react-youtube';
 
 import "../styles/styles.css"
 
@@ -69,7 +68,6 @@ const Hero = ({ data }) => {
 
   return (
       <div className='background'>
-        <YouTube videoId="-hTVNidxg2s"  />
       </div>
      
   );

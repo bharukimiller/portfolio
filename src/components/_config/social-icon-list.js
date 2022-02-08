@@ -7,7 +7,7 @@ export const socialIconList = [
   {
     name: 'github',
     prefix: 'fab',
-    link: 'https://github.com/knochenmark/gatsby-starter-level-2',
+    link: 'https://github.com/bharukimiller',
   },
   {
     name: 'codepen',

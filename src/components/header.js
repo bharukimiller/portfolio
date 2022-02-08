@@ -14,6 +14,10 @@ const StyledHeader = styled.header`
   background-color: var(--bg-content-color);
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-left);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 `;
 const StyledContainer = styled.div`
   display: flex;
@@ -79,9 +83,9 @@ const StyledNavLink = styled(Link)`
 const Header = ({ menuLinks }) => (
   <StyledHeader>
     <StyledContainer>
-      <StyledHomeLink title="logo" to="/">
+      {/* <StyledHomeLink title="logo" to="/">
         <StyledLogo />
-      </StyledHomeLink>
+      </StyledHomeLink> */}
       <StyledNav>
         {menuLinks.map((link, index) => (
           <StyledNavLink key={link.name} to={link.link} activeClassName="active">
